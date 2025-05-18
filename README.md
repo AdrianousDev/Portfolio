@@ -1,4 +1,4 @@
 # Portfólio
 Trabalho em grupo: Portifólio.
 
-https://adrianousdev.github.io/Portifolio/
+https://adrianousdev.github.io/Portfolio/
