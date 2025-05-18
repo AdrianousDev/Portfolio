@@ -182,7 +182,7 @@ header ul li:hover svg path {
 }
 
 .skills .skills-structure img {
-  width: 9.375rem;
+  max-width: 9.375rem;
 }
 
 .detalhe-skills {
@@ -264,7 +264,8 @@ header ul li:hover svg path {
 /* Contact */
 
 .contact {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   max-width: 81.25rem;
   justify-content: center;
   align-items: center;
@@ -316,7 +317,7 @@ header ul li:hover svg path {
 /* division footer */
 
 .division-detalhe {
-  width: 100%;
+  width: 90%;
   height: 2px;
   max-width: 94.063rem;
   background: #c5ddf4;
@@ -344,3 +345,543 @@ footer a:hover {
 }
 
 /* Responsividade */
+
+@media (max-width: 1650px) {
+  .description {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .description > section {
+    width: 100%;
+    grid-column: 2 / 4;
+  }
+}
+
+@media (max-width: 1450px) {
+  .description > p {
+    margin-right: 1.8rem;
+  }
+}
+
+@media (max-width: 1317px) {
+  .banner {
+    width: 70rem;
+  }
+
+  .description > p {
+    margin-right: 0;
+    margin-left: 6rem;
+  }
+
+  .skills {
+    max-width: 70rem;
+    gap: 7rem;
+  }
+
+  .skills .skills-text p {
+    font-size: 1.5rem;
+    max-height: 9.375rem;
+    word-wrap: break-word;
+  }
+
+  .skills .skills-structure img {
+    width: 8rem;
+  }
+
+  .projects {
+    width: 70rem;
+  }
+
+  .contact {
+    width: 70rem;
+  }
+
+  .contact .contact-icons {
+    gap: 7rem;
+  }
+
+  .contact svg {
+    height: 7rem;
+    width: 7rem;
+  }
+}
+
+@media (max-width: 1139px) {
+  .banner {
+    width: 60rem;
+  }
+
+  .description > section p {
+    font-size: 1.2rem;
+  }
+
+  .skills {
+    max-width: 60rem;
+    gap: 5rem;
+  }
+
+  .skills > img {
+    width: 25rem;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  .projects {
+    width: 60rem;
+  }
+
+  .contact {
+    width: 60rem;
+    gap: 0;
+  }
+
+  .contact h2 {
+    font-size: 5rem;
+    width: 22rem;
+  }
+
+  .contact .contact-icons {
+    gap: 3.5rem;
+  }
+}
+
+@media (max-width: 975px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h1 {
+    padding-top: 0rem;
+  }
+
+  .banner {
+    width: 50rem;
+  }
+
+  .description {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .description > p {
+    grid-column: 1 / 3;
+    max-width: 50rem;
+    margin: 0rem;
+    padding: 0rem;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .description > p::after {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: #edf4fa;
+    top: 0;
+    right: 0;
+  }
+
+  .description > p::before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: #edf4fa;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .description > section {
+    grid-column: 1 / 3;
+  }
+
+  .description > section p {
+    font-size: 1.5rem;
+  }
+
+  .skills {
+    max-width: 50rem;
+    gap: 4rem;
+    margin-bottom: 7rem;
+  }
+
+  .skills > img {
+    width: 20rem;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  .skills .skills-text p {
+    height: 100%;
+  }
+
+  .skills .skills-structure img {
+    max-width: 7rem;
+  }
+
+  .projects {
+    width: 50rem;
+  }
+
+  .projects-body {
+    grid-column: 1 / 3;
+  }
+
+  .contact {
+    width: 50rem;
+    gap: 0;
+  }
+
+  .contact h2 {
+    font-size: 5rem;
+    width: 22rem;
+  }
+
+  .contact svg {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .contact .contact-icons {
+    gap: 3rem;
+  }
+
+  .division-detalhe {
+    width: 85%;
+  }
+}
+
+@media (max-width: 816px) {
+  .banner {
+    width: 40rem;
+  }
+
+  .banner > img {
+    width: 35rem;
+    height: auto;
+  }
+
+  .description > p {
+    max-width: 39rem;
+    font-size: 3rem;
+  }
+
+  .description > section {
+    height: 22rem;
+  }
+
+  .skills {
+    max-width: 40rem;
+    gap: 4rem;
+    margin-bottom: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills-body {
+    grid-column: 1 / 3;
+  }
+
+  .skills > img {
+    width: 100%;
+    height: 25rem;
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  .skills .skills-text p {
+    height: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+  }
+
+  .skills-structure {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skills .skills-structure img {
+    max-width: 6rem;
+  }
+
+  .projects {
+    width: 40rem;
+  }
+
+  .contact {
+    width: 40rem;
+    gap: 0;
+  }
+
+  .contact h2 {
+    font-size: 5rem;
+    width: 22rem;
+  }
+
+  .contact svg {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .contact .contact-icons {
+    gap: 2rem;
+    flex-direction: column;
+    justify-self: flex-end;
+  }
+
+  .division-detalhe {
+    width: 85%;
+  }
+}
+
+@media (max-width: 655px) {
+  .banner {
+    width: 100%;
+  }
+
+  .banner > img {
+    width: 80%;
+    height: auto;
+  }
+
+  .description > section {
+    height: 25rem;
+  }
+
+  .skills {
+    max-width: 30rem;
+  }
+
+  .skills > img {
+    border-radius: 0;
+  }
+
+  .skills .skills-text p {
+    height: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+  }
+
+  .detalhe-skills {
+    margin-bottom: 1rem;
+  }
+
+  .projects {
+    width: 30rem;
+    margin-bottom: 7rem;
+  }
+
+  .contact {
+    width: 30rem;
+    margin-bottom: 7rem;
+  }
+
+  .contact svg {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .division-detalhe {
+    width: 80%;
+  }
+
+  footer {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 495px) {
+  .banner {
+    height: 18rem;
+    border-radius: 0;
+  }
+
+  .description > p {
+    max-width: 25rem;
+    font-size: 2.5rem;
+  }
+
+  .description > section > p {
+    font-size: 1.3rem;
+  }
+
+  .skills {
+    max-width: 20rem;
+  }
+
+  .projects {
+    text-align: center;
+    width: 20rem;
+    margin-bottom: 7rem;
+  }
+
+  .projects h2 {
+    font-size: 3rem;
+  }
+
+  .contact {
+    max-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .contact h2 {
+    font-size: 4rem;
+  }
+
+  .contact .contact-icons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact svg {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .division-detalhe {
+    width: 80%;
+  }
+
+  footer {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 385px) {
+  header {
+    padding: 1.5rem 1.5rem 0rem 1.5rem;
+  }
+
+  header ul {
+    gap: 1rem;
+  }
+
+  header ul li svg {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  header > h1 {
+    font-size: 3rem;
+  }
+
+  .description > p {
+    max-width: 20rem;
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
+
+  .description > section > p {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+  }
+
+  .skills {
+    max-width: 18rem;
+  }
+
+  .projects {
+    text-align: center;
+    width: 18rem;
+    margin-bottom: 7rem;
+  }
+
+  .projects h2 {
+    font-size: 3rem;
+  }
+
+  .contact {
+    max-width: 18rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .contact h2 {
+    font-size: 3.8rem;
+  }
+
+  .contact svg {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .division-detalhe {
+    width: 75%;
+  }
+
+  footer {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 290px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header ul,
+  header ul * {
+    display: none;
+  }
+
+  .description > p {
+    max-width: 15rem;
+  }
+
+  .description > section > p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  .description > section {
+    height: 32rem;
+  }
+
+  .skills {
+    max-width: 10rem;
+  }
+
+  .skills .skills-text p {
+    font-size: 1.2rem;
+  }
+
+  .projects {
+    width: 15rem;
+  }
+
+  .contact {
+    max-width: 15rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1.5rem;
+  }
+
+  .contact h2 {
+    font-size: 3rem;
+    line-height: 3.7rem;
+    width: 10rem;
+  }
+
+  .contact svg {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .division-detalhe {
+    width: 75%;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
