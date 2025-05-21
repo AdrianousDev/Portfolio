@@ -15,7 +15,7 @@ body {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 /* Header */
@@ -79,8 +79,7 @@ header ul li:hover svg path {
 .banner {
   width: 81.25rem;
   height: 32.5rem;
-  background-image: url("imgs/banner.jpg");
-  background-size: cover;
+  background-image: url("imgs/banner2.png");
   border-radius: 10px;
   margin: 2rem auto 3.125rem auto;
 
